@@ -1,0 +1,35 @@
+version: 1
+default_environment: dev
+project_id: aad801c6-a33b-489a-9e31-fa5052409fcc
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-github
+    variant: meltanolabs
+    pip_url: meltanolabs-tap-github
+    config:
+      repositories:
+      - pandas-dev/pandas
+    select:
+    - releases.tag_name
+    - releases.body
+    - releases.published_at
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
+  - name: target-bigquery
+    variant: z3z1ma
+    pip_url: git+https://github.com/z3z1ma/target-bigquery.git
+    config:
+      credentials_path: /home/darwin/NTU PACE Data Science Cohort 
+        3/5m-data-2.6-data-pipelines-orchestration/my-project-dsai-3-9c170967ea0e.json
+      dataset: ingestion
+      denormalized: true
+      flattening_enabled: true
+      flattening_max_depth: 1
+      method: batch_job
+      project: my-project-dsai-3
