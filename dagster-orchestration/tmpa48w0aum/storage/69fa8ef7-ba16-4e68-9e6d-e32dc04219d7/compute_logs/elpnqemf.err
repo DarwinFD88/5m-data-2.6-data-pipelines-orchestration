@@ -1,0 +1,8 @@
+[32m2025-11-29 10:34:20 +0800[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 69fa8ef7-ba16-4e68-9e6d-e32dc04219d7 - 21037 - LOGS_CAPTURED - Started capturing logs in process (pid: 21037).
+[32m2025-11-29 10:34:20 +0800[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 69fa8ef7-ba16-4e68-9e6d-e32dc04219d7 - 21037 - summary_statistics - STEP_START - Started execution of step "summary_statistics".
+[32m2025-11-29 10:34:20 +0800[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 69fa8ef7-ba16-4e68-9e6d-e32dc04219d7 - 21037 - summary_statistics - LOADED_INPUT - Loaded input "pandas_releases" using input manager "io_manager", from output "result" of step "pandas_releases"
+[32m2025-11-29 10:34:20 +0800[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 69fa8ef7-ba16-4e68-9e6d-e32dc04219d7 - 21037 - summary_statistics - STEP_INPUT - Got input "pandas_releases" of type "DataFrame". (Type check passed).
+[32m2025-11-29 10:34:21 +0800[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 69fa8ef7-ba16-4e68-9e6d-e32dc04219d7 - 21037 - summary_statistics - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2025-11-29 10:34:21 +0800[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 69fa8ef7-ba16-4e68-9e6d-e32dc04219d7 - 21037 - summary_statistics - ASSET_MATERIALIZATION - Materialized value summary_statistics.
+[32m2025-11-29 10:34:21 +0800[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 69fa8ef7-ba16-4e68-9e6d-e32dc04219d7 - 21037 - summary_statistics - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-11-29 10:34:21 +0800[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 69fa8ef7-ba16-4e68-9e6d-e32dc04219d7 - 21037 - summary_statistics - STEP_SUCCESS - Finished execution of step "summary_statistics" in 971ms.
